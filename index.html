@@ -347,6 +347,39 @@
                 </div>
             </aside>
 
+            <!-- Send Message -->
+            <aside>
+
+                <form action="/submit-form" method="post">
+                    <fieldset>
+                        <label for="clientName"></label>
+                        <input type="text" id="clientName" name="clientName" placeholder="Your Name" required>
+                        <br />
+    
+                        <label for="clientPhoneNumber"></label>
+                        <input type="text" id="clientPhoneNumber" name="clientPhoneNumber" placeholder="Phone Number" required>
+                        <br />
+    
+                        <label for="clientEmail"></label>
+                        <input type="text" id="clientEmail" name="clientEmail" placeholder="Email" required>
+                        <br />
+    
+                        <label for="clientSubject"></label>
+                        <input type="text" id="clientSubject" name="clientSubject" placeholder="Subject" required>
+                        <br />
+    
+                        <label for="clientMsg"></label>
+                        <textarea name="message" id="clientMsg" cols="100" rows="4" placeholder="Message"></textarea required>
+                        <br />      
+    
+                        <label for="clientMsg"></label>
+                        <button id="button" type="submit" onclick="alert('Your message has been send...!')">
+                            Send Message <i class="fa-solid fa-circle-chevron-right"></i>
+                        </button>
+                    </fieldset>
+                </form>
+            </aside>
+
         </section>
 
     </main>
