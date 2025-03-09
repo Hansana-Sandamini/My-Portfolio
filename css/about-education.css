@@ -36,10 +36,10 @@
   transform: translateX(-50%);
   top: 0;
   margin: auto;
-  animation: line-animate 2s infinite alternate-reverse;
+  animation: line-reverse 2s infinite alternate-reverse;
 }
 
-@keyframes line-animate {
+@keyframes line-reverse {
   0% {
     height: 0;
   }
@@ -102,22 +102,33 @@
   top: 75%;
 }
 
-.edu-details > p:nth-child(1) {
-  animation: edu-animate 2s infinite;
-}
-
 .edu-details > p:first-child {
   color: black;
   font-size: 1.5rem;
   margin-top: 0;
 }
 
-@keyframes edu-animate {
+.edu-details > p:nth-child(1) {
+  animation: education-name-reverse 4s infinite;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation-timing-function: steps(30, end);
+}
+
+@keyframes education-name-reverse {
   0% {
     font-weight: normal;
+    width: 0;
+  }
+  50% {
+    font-weight: bold;
+    width: 100%;
   }
   100% {
-    font-weight: bold;
+    font-weight: normal;
+    width: 100%;
   }
 }
 
