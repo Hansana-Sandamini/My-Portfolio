@@ -1,0 +1,131 @@
+#certicates-section {
+  width: 100%;
+  text-align: center;
+  margin: 40px;
+}
+
+#certicates-section > div > h3 {
+  font-size: 1.8rem;
+  color: black;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-container {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  overflow: hidden;
+  background-color: white;
+}
+
+.certificate-slider {
+  display: flex;
+  width: 300%;
+  animation: slide 12s infinite;
+}
+
+.certificate {
+  width: 33%;
+  height: 33%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate img {
+  width: 80vw;
+  height: 50vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  0%,
+  25%,
+  100% {
+    transform: translateX(0);
+  }
+  33.33%,
+  58.33% {
+    transform: translateX(-33%);
+  }
+  66.66%,
+  91.66% {
+    transform: translateX(-66%);
+  }
+}
+
+@media (max-width: 1440px) {
+  .certificate img {
+    width: 70vw;
+  }
+
+  #skills-section > section > div > h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .certificate img {
+    width: 80vw;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificate img {
+    width: 90vw;
+    height: 35vh;
+  }
+
+  #skills-section > section > div > h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .certificate img {
+    width: 85vw;
+    height: 28vh;
+  }
+
+  #skills-section > section > div > h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .certificate img {
+    width: 60vw;
+    height: 25vh;
+  }
+
+  #skills-section > section > div > h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .certificate img {
+    width: 50vw;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .certificate img {
+    width: 50vw;
+    height: 15vh;
+  }
+
+  #skills-section > section > div > h3 {
+    font-size: 1rem;
+  }
+}
