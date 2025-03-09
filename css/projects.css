@@ -90,6 +90,10 @@
 }
 
 @media (max-width: 600px) {
+  #projects-section {
+    padding: 10px;
+  }
+
   #projects-section > aside > div {
     width: 100%;
     margin-bottom: 20px;

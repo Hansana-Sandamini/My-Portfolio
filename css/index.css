@@ -185,7 +185,7 @@ footer > aside:last-child {
 @media (max-width: 600px) {
   #navbar {
     flex-direction: column;
-    height: auto;
+    height: 6vh;
     padding: 10px;
   }
 
@@ -262,7 +262,7 @@ footer > aside:last-child {
   #footer-logo {
     width: 100px;
     height: 30px;
-    padding-top: 20px;
+    margin-bottom: 5px;
   }
 
   #white-social-icons {

@@ -166,6 +166,10 @@ form > fieldset > button:hover {
     font-size: 17px;
     padding-top: 0;
   }
+
+  form > fieldset > input {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 425px) {
@@ -202,6 +206,14 @@ form > fieldset > button:hover {
 
   form > fieldset > textarea {
     height: 120px;
+  }
+
+  form > fieldset > input {
+    font-size: 0.8rem;
+  }
+
+  form > fieldset > button {
+    font-size: 0.8rem;
   }
 }
 

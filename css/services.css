@@ -89,6 +89,10 @@
 }
 
 @media (max-width: 600px) {
+  #services-section {
+    padding: 10px;
+  }
+
   #services-section > div > div {
     width: 100%;
     margin-bottom: 20px;
