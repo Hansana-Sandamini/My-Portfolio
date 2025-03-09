@@ -1,0 +1,143 @@
+#about-section {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#content-container {
+  display: flex;
+  gap: 100px;
+}
+
+#image-container img {
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px #023e8a;
+  transition: transform 0.5s ease-in-out;
+}
+
+#image-container img:hover {
+  transform: scale(1.1);
+}
+
+#details-section {
+  flex: 1;
+}
+
+#details-section p {
+  padding-top: 20px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#details-section .label {
+  width: 200px;
+  font-weight: bold;
+}
+
+#details-section .value {
+  flex: 1;
+  color: #6c757d;
+}
+
+#paragraph-section {
+  width: 100%;
+  max-width: 1000px;
+  text-align: left;
+}
+
+#paragraph-section p {
+  line-height: 1.8;
+  color: #6c757d;
+}
+
+#paragraph-section button {
+  background-color: #023e8a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+#paragraph-section button:hover {
+  background-color: black;
+}
+
+#paragraph-section button i {
+  margin-left: 10px;
+}
+
+@media (max-width: 1024px) {
+  #content-container {
+    gap: 50px;
+  }
+
+  #image-container img {
+    width: 250px;
+    height: 330px;
+  }
+
+  #details-section .label {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  #about-section {
+    padding: 30px;
+  }
+
+  #content-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #image-container img {
+    width: 200px;
+    height: 280px;
+  }
+
+  #details-section {
+    text-align: center;
+  }
+
+  #details-section p {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 425px) {
+  #about-section {
+    padding: 20px;
+  }
+
+  #image-container img {
+    width: 180px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 375px) {
+  #image-container img {
+    width: 160px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 320px) {
+  #image-container img {
+    width: 140px;
+    height: 200px;
+  }
+}
