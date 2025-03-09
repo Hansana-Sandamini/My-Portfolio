@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1000;
+  width: 100%;
+  height: 8vh;
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 1px 8px #023e8a;
+}
+
+#logo {
+  width: 170px;
+  height: 50px;
+}
+
+section.standalone-applications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8vh;
+}
+
+section.standalone-applications h1 {
+  font-size: 2.5rem;
+  padding-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.crms-container {
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 70vw;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.crms-slider {
+  display: flex;
+  width: 1000%;
+  animation: slide 40s infinite;
+}
+
+.crms-container aside h2 {
+  font-size: 2rem;
+  color: #023e8a;
+  margin-bottom: 20px;
+}
+
+.crms-container aside h3 {
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 20px;
+}
+
+.crms-container aside p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+#source-code {
+  text-decoration: none;
+  font-weight: bold;
+  color: #023e8a;
+}
+
+#source-code:hover {
+  text-decoration: underline;
+}
+
+.crms-slider .crms {
+  width: 10%;
+  height: 25%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crms-container .crms-slider .crms img {
+  width: 65vw;
+  height: 45vh;
+  object-fit: contain;
+}
+
+@keyframes slide {
+  0%,
+  10% {
+    transform: translateX(0);
+  }
+  10%,
+  20% {
+    transform: translateX(-10%);
+  }
+  20%,
+  30% {
+    transform: translateX(-20%);
+  }
+  30%,
+  40% {
+    transform: translateX(-30%);
+  }
+  40%,
+  50% {
+    transform: translateX(-40%);
+  }
+  50%,
+  60% {
+    transform: translateX(-50%);
+  }
+  60%,
+  70% {
+    transform: translateX(-60%);
+  }
+  70%,
+  80% {
+    transform: translateX(-70%);
+  }
+  80%,
+  90% {
+    transform: translateX(-80%);
+  }
+  90%,
+  100% {
+    transform: translateX(-90%);
+  }
+}
+
+@media (max-width: 1024px) {
+  section.standalone-applications h1 {
+    font-size: 2.6rem;
+  }
+
+  .crms-container {
+    max-width: 80vw;
+  }
+
+  .crms-container .crms-slider .crms img {
+    width: 70vw;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  section.standalone-applications h1 {
+    font-size: 2.6rem;
+  }
+
+  .crms-container aside h2 {
+    font-size: 1.8rem;
+  }
+
+  .crms-container aside h3 {
+    font-size: 1.4rem;
+  }
+
+  .crms-container aside p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .crms-container {
+    max-width: 90vw;
+  }
+
+  .crms-container .crms-slider .crms img {
+    width: 80vw;
+    height: 35vh;
+  }
+}
+
+@media (max-width: 600px) {
+  section.standalone-applications h1 {
+    font-size: 1.9rem;
+  }
+
+  .crms-container aside h2 {
+    font-size: 1.5rem;
+  }
+
+  .crms-container aside h3 {
+    font-size: 1.2rem;
+  }
+
+  .crms-container aside p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  section.standalone-applications {
+    padding-bottom: 150px;
+  }
+
+  .crms-container {
+    max-width: 95vw;
+  }
+
+  .crms-container .crms-slider .crms img {
+    width: 90vw;
+    height: 30vh;
+  }
+}
+
+@media (max-width: 425px) {
+  section.standalone-applications h1 {
+    font-size: 1.5rem;
+  }
+
+  .crms-container aside h2 {
+    font-size: 1.1rem;
+  }
+
+  .crms-container aside h3 {
+    font-size: 1rem;
+  }
+
+  .crms-container aside p {
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+
+  section.standalone-applications {
+    padding-bottom: 250px;
+  }
+  .crms-container .crms-slider .crms img {
+    width: 95vw;
+    height: 25vh;
+  }
+}
+
+@media (max-width: 375px) {
+  section.standalone-applications h1 {
+    font-size: 1.2rem;
+  }
+
+  .crms-container aside h2 {
+    font-size: 0.8rem;
+  }
+
+  .crms-container .crms-slider .crms img {
+    width: 100vw;
+    height: 20vh;
+  }
+}
