@@ -280,3 +280,74 @@ footer > aside:last-child {
     height: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  #burger-icon {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    font-size: 2rem;
+    color: #023e8a;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  #burger-icon.active {
+    transform: rotate(90deg);
+  }
+
+  header nav ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+  }
+
+  header nav ul.active {
+    right: 0;
+  }
+
+  header nav ul li {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  header nav ul li a {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    color: #023e8a;
+  }
+
+  header nav ul li a:hover {
+    color: #0077b6;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 425px) {
+  header nav ul {
+    width: 80%;
+  }
+
+  header nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  #burger-icon {
+    font-size: 1.5rem;
+    top: 15px;
+    right: 15px;
+  }
+}
