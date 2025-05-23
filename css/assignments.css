@@ -27,6 +27,8 @@ section.assignments {
 }
 
 .tic-tac-toe-container,
+.calculator-container,
+.dino-runner-container,
 .it-assignment-3-container,
 .it-assignment-4-container {
   position: relative;
@@ -51,6 +53,8 @@ section.assignments {
 }
 
 .tic-tac-toe-container aside h2,
+.calculator-container aside h2,
+.dino-runner-container aside h2,
 .it-assignment-3-container > h2,
 .it-assignment-4-container > h2 {
   font-size: 2rem;
@@ -58,26 +62,46 @@ section.assignments {
   margin-bottom: 20px;
 }
 
-.tic-tac-toe-container aside h3 {
+.tic-tac-toe-container aside h3,
+.calculator-container aside h3,
+.dino-runner-container aside h3 {
   font-size: 1.5rem;
   color: black;
   margin-top: 20px;
 }
 
-.tic-tac-toe-container aside p {
+.tic-tac-toe-container aside p,
+.calculator-container aside p,
+.dino-runner-container aside p {
   font-size: 1.4rem;
-  color: #333;
+  color: #6c757d;
   line-height: 1.5;
   padding: 10px;
 }
 
-#source-code {
+#cal-img,
+#dino-runner-img {
+  width: 800px;
+  height: 500px;
+}
+
+.calculator-slider .calculator,
+.dino-runner-slider .dino-runner {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#source-code,
+#live-demo {
   text-decoration: none;
   font-weight: bold;
   color: #023e8a;
 }
 
-#source-code:hover {
+#source-code:hover,
+#live-demo:hover {
   text-decoration: underline;
 }
 
@@ -146,7 +170,10 @@ section.assignments {
 
 @media (max-width: 768px) {
   .tic-tac-toe-container,
-  .it-assignment-3-container {
+  .calculator-container,
+  .dino-runner-container,
+  .it-assignment-3-container,
+  .it-assignment-4-container {
     max-width: 90vw;
   }
 
@@ -160,15 +187,22 @@ section.assignments {
   }
 
   .tic-tac-toe-container aside h2,
-  .it-assignment-3-container > h2 {
+  .calculator-container aside h2,
+  .dino-runner-container aside h2,
+  .it-assignment-3-container > h2,
+  .it-assignment-4-container > h2 {
     font-size: 1.8rem;
   }
 
-  .tic-tac-toe-container aside h3 {
+  .tic-tac-toe-container aside h3,
+  .calculator-container aside h3,
+  .dino-runner-container aside h3 {
     font-size: 1.4rem;
   }
 
-  .tic-tac-toe-container aside p {
+  .tic-tac-toe-container aside p,
+  .calculator-container aside p,
+  .dino-runner-container aside p {
     font-size: 1rem;
     line-height: 1.5;
   }
@@ -185,6 +219,8 @@ section.assignments {
 
 @media (max-width: 600px) {
   .tic-tac-toe-container,
+  .calculator-container,
+  .dino-runner-container,
   .it-assignment-3-container,
   .it-assignment-4-container {
     max-width: 95vw;
@@ -200,16 +236,22 @@ section.assignments {
   }
 
   .tic-tac-toe-container aside h2,
+  .calculator-container aside h2,
+  .dino-runner-container aside h2,
   .it-assignment-3-container > h2,
   .it-assignment-4-container > h2 {
     font-size: 1.5rem;
   }
 
-  .tic-tac-toe-container aside h3 {
+  .tic-tac-toe-container aside h3,
+  .calculator-container aside h3,
+  .dino-runner-container aside h3 {
     font-size: 1.2rem;
   }
 
-  .tic-tac-toe-container aside p {
+  .tic-tac-toe-container aside p,
+  .calculator-container aside p,
+  .dino-runner-container aside p {
     font-size: 0.8rem;
     line-height: 1.3;
   }
@@ -243,16 +285,22 @@ section.assignments {
   }
 
   .tic-tac-toe-container aside h2,
+  .calculator-container aside h2,
+  .dino-runner-container aside h2,
   .it-assignment-3-container > h2,
   .it-assignment-4-container > h2 {
     font-size: 1.1rem;
   }
 
-  .tic-tac-toe-container aside h3 {
+  .tic-tac-toe-container aside h3,
+  .calculator-container aside h3,
+  .dino-runner-container aside h3 {
     font-size: 1rem;
   }
 
-  .tic-tac-toe-container aside p {
+  .tic-tac-toe-container aside p,
+  .calculator-container aside p,
+  .dino-runner-container aside p {
     font-size: 0.7rem;
     line-height: 1;
   }
@@ -273,9 +321,35 @@ section.assignments {
   }
 
   .tic-tac-toe-container aside h2,
+  .calculator-container aside h2,
+  .dino-runner-container aside h2,
   .it-assignment-3-container > h2,
   .it-assignment-4-container > h2 {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  #cal-img,
+  #dino-runner-img {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  #cal-img,
+  #dino-runner-img {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  #cal-img,
+  #dino-runner-img {
+    width: 300px;
+    height: 180px;
   }
 }
 

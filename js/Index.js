@@ -1,16 +1,13 @@
-// Burger menu functionality
 document.addEventListener('DOMContentLoaded', function() {
     const burgerIcon = document.getElementById('burger-icon');
     const navMenu = document.querySelector('header nav ul');
     const navLinks = document.querySelectorAll('header nav ul li a');
     
-    // Toggle menu when burger icon is clicked
     burgerIcon.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent the click from bubbling up
+        e.stopPropagation(); 
         navMenu.classList.toggle('active');
         burgerIcon.classList.toggle('active');
         
-        // Toggle the visibility of nav items with animation
         const navItems = document.querySelectorAll('header nav ul li');
         navItems.forEach((item, index) => {
             if (navMenu.classList.contains('active')) {
@@ -24,14 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Close menu when a nav link is clicked (for mobile)
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
-            if (window.innerWidth <= 768) { // Only for mobile view
+            if (window.innerWidth <= 768) { 
                 navMenu.classList.remove('active');
                 burgerIcon.classList.remove('active');
                 
-                // Hide nav items with animation
                 const navItems = document.querySelectorAll('header nav ul li');
                 navItems.forEach((item, index) => {
                     item.style.opacity = '0';
@@ -42,13 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Close menu when clicking outside of it
     document.addEventListener('click', function(event) {
         if (!event.target.closest('#navbar') && navMenu.classList.contains('active')) {
             navMenu.classList.remove('active');
             burgerIcon.classList.remove('active');
             
-            // Hide nav items with animation
             const navItems = document.querySelectorAll('header nav ul li');
             navItems.forEach((item, index) => {
                 item.style.opacity = '0';
@@ -58,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Smooth scrolling for all links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
