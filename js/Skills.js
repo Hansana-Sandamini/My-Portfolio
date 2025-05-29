@@ -1,3 +1,4 @@
+// Languages and Tools
 document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     
@@ -24,4 +25,36 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+});
+
+// certificates
+document.addEventListener('DOMContentLoaded', function() {
+    let certificates = [
+        "/assets/images/certifications/sololearn-sql-intro.jpg",
+        "/assets/images/certifications/hackerrank-sql-basic.png",
+        "/assets/images/certifications/sololearn-intro-java.jpg",
+        "/assets/images/certifications/hackerrank-java-basic.png",
+        "/assets/images/certifications/hackerrank-javascript-basic.png"
+    ];
+
+    let currentIndex = 0;
+
+    function updateCertificates() {
+        $(".certificate-slider > div").each(function(index) {
+            let certIndex = (currentIndex + index) % certificates.length;
+            $(this).css("background-image", `url(${certificates[certIndex]})`);
+        });
+    }
+
+    $("#cert-right").click(function() {
+        currentIndex = (currentIndex + 1) % certificates.length;
+        updateCertificates();
+    });
+
+    $("#cert-left").click(function() {
+        currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
+        updateCertificates();
+    });
+
+    updateCertificates();
 });
