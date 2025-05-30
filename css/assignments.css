@@ -26,7 +26,7 @@ section.assignments {
   padding-bottom: 100px;
 }
 
-.tic-tac-toe-container,
+.assignment-container,
 .calculator-container,
 .dino-runner-container,
 .it-assignment-3-container,
@@ -46,13 +46,7 @@ section.assignments {
   margin-bottom: 80px;
 }
 
-.tic-tac-toe-slider {
-  display: flex;
-  width: 400%;
-  animation: slide 12s infinite;
-}
-
-.tic-tac-toe-container aside h2,
+.assignment-container aside h2,
 .calculator-container aside h2,
 .dino-runner-container aside h2,
 .it-assignment-3-container > h2,
@@ -62,7 +56,7 @@ section.assignments {
   margin-bottom: 20px;
 }
 
-.tic-tac-toe-container aside h3,
+.assignment-container aside h3,
 .calculator-container aside h3,
 .dino-runner-container aside h3 {
   font-size: 1.5rem;
@@ -70,7 +64,7 @@ section.assignments {
   margin-top: 20px;
 }
 
-.tic-tac-toe-container aside p,
+.assignment-container aside p,
 .calculator-container aside p,
 .dino-runner-container aside p {
   font-size: 1.4rem;
@@ -83,6 +77,12 @@ section.assignments {
 #dino-runner-img {
   width: 800px;
   height: 500px;
+  box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+}
+
+#cal-img:hover,
+#dino-runner-img:hover {
+  box-shadow: 0 0 20px #023e8a;
 }
 
 .calculator-slider .calculator,
@@ -105,38 +105,76 @@ section.assignments {
   text-decoration: underline;
 }
 
-.tic-tac-toe-slider .tic-tac-toe {
-  width: 25%;
-  height: 25%;
-  flex-shrink: 0;
+.cert-nav-btn {
+  background: none;
+  border: none;
+  margin: 0 55px;
+}
+
+.cert-nav-btn i {
+  font-size: 5em;
+  color: #023e8a;
+  transition: all 0.3s ease;
+}
+
+.cert-nav-btn:hover i {
+  color: black;
+  transform: scale(1.1);
+}
+
+.tic-tac-toe-wrapper,
+.pos-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 100%;
+  /* max-width: 1200px; */
+  padding: 50px 0 50px 0;
+  margin: 0 auto;
 }
 
-.tic-tac-toe-container .tic-tac-toe-slider .tic-tac-toe img {
-  width: 25vw;
-  height: 35vh;
-  object-fit: contain;
+.tic-tac-toe-container,
+.pos-container {
+  position: relative;
+  width: 900px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes slide {
-  0%,
-  15% {
-    transform: translateX(0);
-  }
-  25%,
-  40% {
-    transform: translateX(-25%);
-  }
-  50%,
-  65% {
-    transform: translateX(-50%);
-  }
-  85%,
-  100% {
-    transform: translateX(-75%);
-  }
+.tic-tac-toe-slider,
+.pos-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.tic-tac-toe-slider > div,
+.pos-slider > div {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 350px;
+  height: 580px;
+  z-index: 2;
+}
+
+.tic-tac-toe-slider > div:hover,
+.pos-slider > div:hover {
+  box-shadow: 0 0 20px #023e8a;
+}
+
+.pos-slider > div {
+  width: 830px;
+  height: 470px;
 }
 
 .case-container {
@@ -169,7 +207,7 @@ section.assignments {
 }
 
 @media (max-width: 768px) {
-  .tic-tac-toe-container,
+  .assignment-container,
   .calculator-container,
   .dino-runner-container,
   .it-assignment-3-container,
@@ -177,16 +215,11 @@ section.assignments {
     max-width: 90vw;
   }
 
-  .tic-tac-toe-container .tic-tac-toe-slider .tic-tac-toe img {
-    width: 40vw;
-    height: 25vh;
-  }
-
   section.assignments h1 {
     font-size: 2.6rem;
   }
 
-  .tic-tac-toe-container aside h2,
+  .assignment-container aside h2,
   .calculator-container aside h2,
   .dino-runner-container aside h2,
   .it-assignment-3-container > h2,
@@ -194,13 +227,13 @@ section.assignments {
     font-size: 1.8rem;
   }
 
-  .tic-tac-toe-container aside h3,
+  .assignment-container aside h3,
   .calculator-container aside h3,
   .dino-runner-container aside h3 {
     font-size: 1.4rem;
   }
 
-  .tic-tac-toe-container aside p,
+  .assignment-container aside p,
   .calculator-container aside p,
   .dino-runner-container aside p {
     font-size: 1rem;
@@ -218,7 +251,7 @@ section.assignments {
 }
 
 @media (max-width: 600px) {
-  .tic-tac-toe-container,
+  .assignment-container,
   .calculator-container,
   .dino-runner-container,
   .it-assignment-3-container,
@@ -226,16 +259,11 @@ section.assignments {
     max-width: 95vw;
   }
 
-  .tic-tac-toe-container .tic-tac-toe-slider .tic-tac-toe img {
-    width: 50vw;
-    height: 20vh;
-  }
-
   section.assignments h1 {
     font-size: 1.9rem;
   }
 
-  .tic-tac-toe-container aside h2,
+  .assignment-container aside h2,
   .calculator-container aside h2,
   .dino-runner-container aside h2,
   .it-assignment-3-container > h2,
@@ -243,13 +271,13 @@ section.assignments {
     font-size: 1.5rem;
   }
 
-  .tic-tac-toe-container aside h3,
+  .assignment-container aside h3,
   .calculator-container aside h3,
   .dino-runner-container aside h3 {
     font-size: 1.2rem;
   }
 
-  .tic-tac-toe-container aside p,
+  .assignment-container aside p,
   .calculator-container aside p,
   .dino-runner-container aside p {
     font-size: 0.8rem;
@@ -284,7 +312,7 @@ section.assignments {
     font-size: 1.5rem;
   }
 
-  .tic-tac-toe-container aside h2,
+  .assignment-container aside h2,
   .calculator-container aside h2,
   .dino-runner-container aside h2,
   .it-assignment-3-container > h2,
@@ -292,13 +320,13 @@ section.assignments {
     font-size: 1.1rem;
   }
 
-  .tic-tac-toe-container aside h3,
+  .assignment-container aside h3,
   .calculator-container aside h3,
   .dino-runner-container aside h3 {
     font-size: 1rem;
   }
 
-  .tic-tac-toe-container aside p,
+  .assignment-container aside p,
   .calculator-container aside p,
   .dino-runner-container aside p {
     font-size: 0.7rem;
@@ -311,16 +339,11 @@ section.assignments {
 }
 
 @media (max-width: 375px) {
-  .tic-tac-toe-container .tic-tac-toe-slider .tic-tac-toe img {
-    width: 70vw;
-    height: 12vh;
-  }
-
   section.assignments h1 {
     font-size: 1.2rem;
   }
 
-  .tic-tac-toe-container aside h2,
+  .assignment-container aside h2,
   .calculator-container aside h2,
   .dino-runner-container aside h2,
   .it-assignment-3-container > h2,
@@ -352,26 +375,3 @@ section.assignments {
     height: 180px;
   }
 }
-
-/* .tic-tac-toe-container .tic-tac-toe-slider .tic-tac-toe button {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: black;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.tic-tac-toe-container .tic-tac-toe-slider .tic-tac-toe button:hover {
-  color: #023e8a;
-}
-
-#cert-left {
-  left: -40px;
-}
-
-#cert-right {
-  right: -40px;
-} */
