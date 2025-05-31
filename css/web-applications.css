@@ -23,14 +23,14 @@ body {
   height: 50px;
 }
 
-section.standalone-applications {
+section.web-applications {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 8vh;
 }
 
-section.standalone-applications h1 {
+section.web-applications h1 {
   font-size: 2.5rem;
   padding-top: 30px;
   text-align: center;
@@ -38,7 +38,7 @@ section.standalone-applications h1 {
   color: black;
 }
 
-.standalone-applications-container {
+.web-applications-container {
   position: relative;
   display: inline-block;
   background-color: white;
@@ -54,20 +54,19 @@ section.standalone-applications h1 {
   margin-bottom: 50px;
 }
 
-.crms-wrapper,
-.sms-wrapper {
+.lolw-wrapper,
+.hotel-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   width: 100%;
-  /* max-width: 1200px; */
   padding: 50px 0 50px 0;
   margin: 0 auto;
 }
 
-.crms-container,
-.sms-container {
+.lolw-container,
+.hotel-container {
   position: relative;
   width: 900px;
   height: 420px;
@@ -76,8 +75,8 @@ section.standalone-applications h1 {
   align-items: center;
 }
 
-.crms-slider,
-.sms-slider {
+.lolw-slider,
+.hotel-slider {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,298 +102,309 @@ section.standalone-applications h1 {
   transform: scale(1.1);
 }
 
-.crms-slider > div,
-.sms-slider > div {
+.lolw-slider > div,
+.hotel-slider > div {
   position: absolute;
   background-size: cover;
   background-position: center;
   box-shadow: 4px 0 76px 10px rgba(184, 184, 184, 1);
   transition: all 0.3s ease;
   cursor: pointer;
-  width: 800px;
-  height: 520px;
+  width: 840px;
+  height: 480px;
   z-index: 2;
 }
 
-.crms-slider > div:hover,
-.sms-slider > div:hover {
+.lolw-slider > div:hover,
+.hotel-slider > div:hover {
   box-shadow: 0 0 20px #023e8a;
 }
 
-.standalone-applications-container aside h2 {
+.web-applications-container aside h2 {
   font-size: 2rem;
   color: #023e8a;
   margin-bottom: 20px;
 }
 
-.standalone-applications-container aside h3 {
+.web-applications-container aside h3 {
   font-size: 1.5rem;
   color: black;
   margin-top: 20px;
 }
 
-.standalone-applications-container aside p {
+.web-applications-container aside p {
   font-size: 1.4rem;
   color: #6c757d;
   line-height: 1.5;
   padding: 10px;
 }
 
-#source-code {
+#source-code,
+#live-demo {
   text-decoration: none;
   font-weight: bold;
   color: #023e8a;
 }
 
-#source-code:hover {
+#source-code:hover,
+#live-demo:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
-  .crms-container,
-  .sms-container {
-    width: 700px;
+  .lolw-container,
+  .hotel-container {
+    width: 800px;
     height: 380px;
   }
 
-  .crms-slider > div,
-  .sms-slider > div {
-    width: 580px;
-    height: 380px;
+  .lolw-slider > div,
+  .hotel-slider > div {
+    width: 500px;
+    height: 300px;
   }
 
-  #crms-left,
-  #crms-right,
-  #sms-left,
-  #sms-right {
+  #lolw-left,
+  #lolw-right,
+  #hotel-left,
+  #hotel-right {
     margin: 0 40px;
   }
 
-  #crms-left i,
-  #crms-right i,
-  #sms-left i,
-  #sms-right i {
+  #lolw-left i,
+  #lolw-right i,
+  #hotel-left i,
+  #hotel-right i {
     font-size: 4em;
   }
 }
 
 @media (max-width: 1024px) {
-  section.standalone-applications h1 {
+  section.web-applications h1 {
     font-size: 2.6rem;
   }
 
-  .standalone-applications-container {
+  .web-applications-container {
     max-width: 80vw;
   }
 
-  .crms-wrapper,
-  .sms-wrapper {
+  .lolw-slider > div,
+  .hotel-slider > div {
+    width: 70vw;
+    height: 30vh;
+  }
+
+  .lolw-wrapper,
+  .hotel-wrapper {
     padding: 20px 0 20px 0;
   }
 }
 
-@media (max-width: 768px) {
-  section.standalone-applications h1 {
-    font-size: 2.6rem;
-  }
-
-  .standalone-applications-container aside h2 {
-    font-size: 1.8rem;
-  }
-
-  .standalone-applications-container aside h3 {
-    font-size: 1.4rem;
-  }
-
-  .standalone-applications-container aside p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .crms-wrapper,
-  .sms-wrapper {
-    padding: 0;
-  }
-
-  .crms-wrapper,
-  .sms-wrapper {
-    padding: 30px 0;
-  }
-
-  .crms-container,
-  .sms-container {
-    width: 100%;
-    height: 380px;
-    padding: 0 20px;
-  }
-
-  .crms-slider > div,
-  .sms-slider > div {
-    width: 350px;
-    height: 280px;
-  }
-
-  #crms-left,
-  #crms-right,
-  #sms-left,
-  #sms-right {
-    margin: 0 20px;
-  }
-
-  #crms-left i,
-  #crms-right i,
-  #sms-left i,
-  #sms-right i {
-    font-size: 3em;
-  }
-}
-
 @media (max-width: 992px) {
-  .crms-container,
-  .sms-container {
+  .lolw-container,
+  .hotel-container {
     width: 700px;
     height: 420px;
   }
 
-  .crms-slider > div,
-  .sms-slider > div {
+  .lolw-slider > div,
+  .hotel-slider > div {
     width: 400px;
-    height: 300px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.web-applications h1 {
+    font-size: 2.6rem;
+  }
+
+  .web-applications-container aside h2 {
+    font-size: 1.8rem;
+  }
+
+  .web-applications-container aside h3 {
+    font-size: 1.4rem;
+  }
+
+  .web-applications-container aside p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .lolw-wrapper,
+  .hotel-wrapper {
+    padding: 30px 0;
+  }
+
+  .lolw-container,
+  .hotel-container {
+    width: 100%;
+    height: 200px;
+    padding: 0 20px;
+  }
+
+  .lolw-slider > div,
+  .hotel-slider > div {
+    width: 100%;
+    height: 200px;
+  }
+
+  #lolw-left,
+  #lolw-right,
+  #hotel-left,
+  #hotel-right {
+    margin: 0 20px;
+  }
+
+  #lolw-left i,
+  #lolw-right i,
+  #hotel-left i,
+  #hotel-right i {
+    font-size: 3em;
   }
 }
 
 @media (max-width: 600px) {
-  section.standalone-applications h1 {
+  section.web-applications h1 {
     font-size: 1.9rem;
   }
 
-  .standalone-applications-container aside h2 {
+  .web-applications-container aside h2 {
     font-size: 1.5rem;
   }
 
-  .standalone-applications-container aside h3 {
+  .web-applications-container aside h3 {
     font-size: 1.2rem;
   }
 
-  .standalone-applications-container aside p {
+  .web-applications-container aside p {
     font-size: 0.8rem;
     line-height: 1.3;
   }
 
-  section.standalone-applications {
+  section.web-applications {
     padding-bottom: 150px;
   }
 
-  .crms-slider > div,
-  .sms-slider > div {
-    height: 200px;
-    width: 280px;
+  .lolw-container,
+  .hotel-container {
+    width: 100%;
+    height: 120px;
+    padding: 0 20px;
   }
 
-  #crms-left,
-  #crms-right,
-  #sms-left,
-  #sms-right {
+  .lolw-slider > div,
+  .hotel-slider > div {
+    height: 150px;
+  }
+
+  #lolw-left,
+  #lolw-right,
+  #hotel-left,
+  #hotel-right {
     width: 40px;
     height: 40px;
   }
 
-  #crms-left,
-  #sms-left {
+  #lolw-left,
+  #hotel-left {
     left: 5px;
   }
 
-  #crms-right,
-  #sms-right {
+  #lolw-right,
+  #hotel-right {
     right: 5px;
   }
 
-  #crms-left i,
-  #crms-right i,
-  #sms-left i,
-  #sms-right i {
+  #lolw-left i,
+  #lolw-right i,
+  #hotel-left i,
+  #hotel-right i {
     font-size: 1.8em;
   }
 }
 
-@media (max-width: 480px) {
-  .crms-container,
-  .sms-container {
-    height: 100px;
-    width: 170px;
-  }
-
-  .crms-slider > div,
-  .sms-slider > div {
-    height: 90px;
-    width: 120px;
-  }
-
-  #crms-left,
-  #crms-right,
-  #sms-left,
-  #sms-right {
-    width: 35px;
-    height: 35px;
-  }
-
-  #crms-left i,
-  #crms-right i,
-  #sms-left i,
-  #sms-right i {
-    font-size: 1.5em;
+@media (max-width: 475px) {
+  .lolw-container,
+  .hotel-container {
+    height: 300px;
   }
 }
 
 @media (max-width: 425px) {
-  section.standalone-applications h1 {
+  section.web-applications h1 {
     font-size: 1.5rem;
   }
 
-  .standalone-applications-container aside h2 {
+  .web-applications-container aside h2 {
     font-size: 1.1rem;
   }
 
-  .standalone-applications-container aside h3 {
+  .web-applications-container aside h3 {
     font-size: 1rem;
   }
 
-  .standalone-applications-container aside p {
+  .web-applications-container aside p {
     font-size: 0.7rem;
     line-height: 1;
   }
 
-  section.standalone-applications {
+  section.web-applications {
     padding-bottom: 250px;
   }
 }
 
-@media (max-width: 375px) {
-  section.standalone-applications h1 {
-    font-size: 1.2rem;
+@media (max-width: 480px) {
+  .lolw-container,
+  .hotel-container {
+    width: 100%;
+    height: 120px;
+    padding: 0 10px;
   }
 
-  .standalone-applications-container aside h2 {
-    font-size: 0.8rem;
-  }
-
-  .crms-slider > div,
-  .sms-slider > div {
+  .lolw-slider > div,
+  .hotel-slider > div {
     height: 80px;
   }
 
-  #crms-left,
-  #crms-right,
-  #sms-left,
-  #sms-right {
+  #lolw-left,
+  #lolw-right,
+  #hotel-left,
+  #hotel-right {
+    width: 35px;
+    height: 35px;
+  }
+
+  #lolw-left i,
+  #lolw-right i,
+  #hotel-left i,
+  #hotel-right i {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 375px) {
+  section.web-applications h1 {
+    font-size: 1.2rem;
+  }
+
+  .web-applications-container aside h2 {
+    font-size: 0.8rem;
+  }
+
+  #lolw-left,
+  #lolw-right,
+  #hotel-left,
+  #hotel-right {
     width: 30px;
     height: 30px;
   }
 
-  #crms-left i,
-  #crms-right i,
-  #sms-left i,
-  #sms-right i {
+  #lolw-left i,
+  #lolw-right i,
+  #hotel-left i,
+  #hotel-right i {
     font-size: 1.2em;
   }
 }
