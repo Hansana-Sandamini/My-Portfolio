@@ -16,7 +16,7 @@ Access the production version hosted on Firebase:
 
 ### ⚡ *Frontend Development*
 - **HTML5** - Website structure & semantic markup  
-- **CSS3** - Styling, animations & responsive design (mobile, tablet, desktop)  
+- **CSS3** - Styling, animations & responsive design (mobile, tablet, desktop, laptop)  
 - **JavaScript** - Interactive elements & dynamic behavior  
 
 ### ⚡ *Deployment & Hosting*  
