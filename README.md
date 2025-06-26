@@ -12,6 +12,26 @@ Access the production version hosted on Firebase:
 ✅ Clean, modern UI with smooth interactions<br/>
 ✅ Easy navigation & performance optimized<br/><br/>
 
+## 🛠️ Technologies & Tools Used
+
+### ⚡ *Frontend Development*
+- **HTML5** - Website structure & semantic markup  
+- **CSS3** - Styling, animations & responsive design (mobile, tablet, desktop)  
+- **JavaScript** - Interactive elements & dynamic behavior  
+
+### ⚡ *Deployment & Hosting*  
+- **Firebase** - Fast, secure hosting for the production build  
+
+### ⚡ *Design & Prototyping*  
+- **Figma** - High-fidelity mockups for all devices  
+- **Wireframe.cc** - Early layout planning  
+- **Gloomaps** - Site mapping & navigation flow  
+
+### ⚡ *Development Tools*  
+- **VS Code** - Primary code editor with extensions  
+- **Git & GitHub** - Version control & collaboration  
+
+---
 
 ❖ Site Map URL : https://www.gloomaps.com/jMa9povwPb
 
